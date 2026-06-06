@@ -296,20 +296,142 @@ footer{background:var(--ink);color:rgba(255,255,255,0.55);padding:4rem 2.5rem 2.
       <div class="sem-panel-header"><div class="sem-panel-title">Semester 2 — Coming Soon</div></div>
       <p style="color:var(--muted);font-size:0.9rem;">Resources are being prepared. Book a session for guidance in the meantime.</p>
     </div>
+</div>
     <div class="sem-panel" id="panel-3">
       <div class="sem-panel-header">
         <div><div class="sem-panel-title">Semester 3 Resources</div><p style="font-size:0.85rem;color:var(--muted);margin-top:4px;">21 Credit Hours · UHS B.Sc. MLT</p></div>
         <span class="tag-green">All Free</span>
       </div>
       <div class="resource-list">
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">🧬</span><div><span class="resource-name">HM-I — Hematology-I</span><span class="resource-meta">Notes, practical book &amp; MCQ bank</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading Hematology-I')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">🔬</span><div><span class="resource-name">HP-I — Histopathology-I</span><span class="resource-meta">H&amp;E staining, tissue processing, practical guide</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading Histopathology-I')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">🫀</span><div><span class="resource-name">GPA — General Pathology</span><span class="resource-meta">Lecture notes &amp; viva prep</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading General Pathology')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">💻</span><div><span class="resource-name">GEICT — Applications of ICT</span><span class="resource-meta">Notes &amp; assignments</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading ICT Notes')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">🤝</span><div><span class="resource-name">GECCM — Civics &amp; Community Engagement</span><span class="resource-meta">Notes &amp; reflective writing guide</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading Civics Notes')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">💼</span><div><span class="resource-name">GEE — Entrepreneurship</span><span class="resource-meta">Notes, case studies &amp; assignments</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading Entrepreneurship Notes')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">📝</span><div><span class="resource-name">EPC-1 — English Proficiency 1</span><span class="resource-meta">Essay writing, grammar &amp; practice exercises</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading EPC-1 Material')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">📓</span><div><span class="resource-name">PERL-III — Reflective Journal Guide</span><span class="resource-meta">Gibbs Reflective Cycle templates &amp; sample entries</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading PERL-III Guide')">⬇ Download</a></div>
+ 
+        <!-- HM-I -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">🧬</span><div><span class="subject-name">HM-I — Hematology-I</span><span class="subject-desc">Blood cells, disorders, staining techniques</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_HM1_MCQ" target="_blank" class="sublink sublink-mcq"><span class="sublink-icon">📝</span> MCQ Bank</a>
+              <a href="YOUR_LINK_HM1_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <a href="YOUR_LINK_HM1_PRACTICAL" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">🔬</span> Practical Book</a>
+              <a href="YOUR_LINK_HM1_VIVA" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> Viva Prep</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- HP-I -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">🔬</span><div><span class="subject-name">HP-I — Histopathology-I</span><span class="subject-desc">H&amp;E staining, tissue processing, histological techniques</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_HP1_MCQ" target="_blank" class="sublink sublink-mcq"><span class="sublink-icon">📝</span> MCQ Bank</a>
+              <a href="YOUR_LINK_HP1_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <a href="YOUR_LINK_HP1_PRACTICAL" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">🔬</span> Practical Book</a>
+              <a href="YOUR_LINK_HP1_VIVA" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> Viva Prep</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- GPA -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">🫀</span><div><span class="subject-name">GPA — General Pathology</span><span class="subject-desc">Inflammation, cell injury, neoplasia fundamentals</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_GPA_MCQ" target="_blank" class="sublink sublink-mcq"><span class="sublink-icon">📝</span> MCQ Bank</a>
+              <a href="YOUR_LINK_GPA_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <span class="sublink sublink-soon"><span class="sublink-icon">🔬</span> Practical Book — Soon</span>
+              <a href="YOUR_LINK_GPA_VIVA" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> Viva Prep</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- GEICT -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">💻</span><div><span class="subject-name">GEICT — Applications of ICT</span><span class="subject-desc">Computer applications, digital tools in healthcare</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <span class="sublink sublink-soon"><span class="sublink-icon">📝</span> MCQ Bank — Soon</span>
+              <a href="YOUR_LINK_ICT_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <span class="sublink sublink-soon"><span class="sublink-icon">🔬</span> Practical Book — Soon</span>
+              <span class="sublink sublink-soon"><span class="sublink-icon">🎯</span> Viva Prep — Soon</span>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- GECCM -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">🤝</span><div><span class="subject-name">GECCM — Civics &amp; Community Engagement</span><span class="subject-desc">Civic responsibility, community health service</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <span class="sublink sublink-soon"><span class="sublink-icon">📝</span> MCQ Bank — Soon</span>
+              <a href="YOUR_LINK_CCM_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <a href="YOUR_LINK_CCM_REFLECTIVE" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">✍️</span> Reflective Writing Guide</a>
+              <span class="sublink sublink-soon"><span class="sublink-icon">🎯</span> Viva Prep — Soon</span>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- GEE -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">💼</span><div><span class="subject-name">GEE — Entrepreneurship</span><span class="subject-desc">Business basics, startup thinking, case studies</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <span class="sublink sublink-soon"><span class="sublink-icon">📝</span> MCQ Bank — Soon</span>
+              <a href="YOUR_LINK_GEE_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <a href="YOUR_LINK_GEE_CASES" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">📊</span> Case Studies</a>
+              <span class="sublink sublink-soon"><span class="sublink-icon">🎯</span> Viva Prep — Soon</span>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- EPC-1 -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">📝</span><div><span class="subject-name">EPC-1 — English Proficiency 1</span><span class="subject-desc">Essay writing, grammar, academic communication</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <span class="sublink sublink-soon"><span class="sublink-icon">📝</span> MCQ Bank — Soon</span>
+              <a href="YOUR_LINK_EPC1_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <a href="YOUR_LINK_EPC1_ESSAY" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">✍️</span> Essay Practice Guide</a>
+              <a href="YOUR_LINK_EPC1_GRAMMAR" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🔤</span> Grammar Exercises</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- PERL-III -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">📓</span><div><span class="subject-name">PERL-III — Reflective Learning</span><span class="subject-desc">Gibbs Reflective Cycle, journal entries, clinical placement</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_PERL3_TEMPLATE" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Gibbs Cycle Templates</a>
+              <a href="YOUR_LINK_PERL3_SAMPLES" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">📄</span> Sample Journal Entries</a>
+              <a href="YOUR_LINK_PERL3_GUIDE" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> How-to Guide</a>
+              <span class="sublink sublink-soon"><span class="sublink-icon">📝</span> MCQ Bank — Soon</span>
+            </div>
+          </div>
+        </div>
+ 
       </div>
     </div>
     <div class="sem-panel" id="panel-4">
@@ -318,14 +440,135 @@ footer{background:var(--ink);color:rgba(255,255,255,0.55);padding:4rem 2.5rem 2.
         <span class="tag-green">All Free</span>
       </div>
       <div class="resource-list">
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">🧬</span><div><span class="resource-name">HM-II — Hematology-II</span><span class="resource-meta">Advanced hematology, disorders, MCQ bank</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading Hematology-II')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">🔬</span><div><span class="resource-name">HP-II — Histopathology-II</span><span class="resource-meta">Advanced staining, special techniques, practical book</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading Histopathology-II')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">🦠</span><div><span class="resource-name">Mic-I — Microbiology-I (Basic Bacteriology)</span><span class="resource-meta">Gram staining, culture media, sensitivity testing</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading Microbiology-I')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">⚗️</span><div><span class="resource-name">Chemical Pathology-I</span><span class="resource-meta">Clinical chemistry, ISEs, analyzer notes</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading Chemical Pathology-I')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">🧪</span><div><span class="resource-name">BMB — Basic Molecular Biology</span><span class="resource-meta">DNA, PCR, molecular techniques notes</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading Molecular Biology Notes')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">🇵🇰</span><div><span class="resource-name">PS — Pakistan Studies</span><span class="resource-meta">Notes &amp; important topics</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading Pakistan Studies Notes')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">📝</span><div><span class="resource-name">EPC-2 — English Proficiency 2</span><span class="resource-meta">Academic writing, reading comprehension &amp; practice</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading EPC-2 Material')">⬇ Download</a></div>
-        <div class="resource-item"><div class="resource-info"><span class="resource-icon">📓</span><div><span class="resource-name">PERL-IV — Reflective Journal Guide</span><span class="resource-meta">Gibbs Reflective Cycle templates &amp; sample entries</span></div></div><a href="YOUR_GOOGLE_DRIVE_LINK_HERE" target="_blank" class="btn-download" onclick="toast('Downloading PERL-IV Guide')">⬇ Download</a></div>
+ 
+        <!-- HM-II -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">🧬</span><div><span class="subject-name">HM-II — Hematology-II</span><span class="subject-desc">Advanced disorders, leukemia, coagulation, cytochemistry</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_HM2_MCQ" target="_blank" class="sublink sublink-mcq"><span class="sublink-icon">📝</span> MCQ Bank</a>
+              <a href="YOUR_LINK_HM2_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <a href="YOUR_LINK_HM2_PRACTICAL" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">🔬</span> Practical Book</a>
+              <a href="YOUR_LINK_HM2_VIVA" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> Viva Prep</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- HP-II -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">🔬</span><div><span class="subject-name">HP-II — Histopathology-II</span><span class="subject-desc">Special stains, advanced tissue techniques, pathological changes</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_HP2_MCQ" target="_blank" class="sublink sublink-mcq"><span class="sublink-icon">📝</span> MCQ Bank</a>
+              <a href="YOUR_LINK_HP2_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <a href="YOUR_LINK_HP2_PRACTICAL" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">🔬</span> Practical Book</a>
+              <a href="YOUR_LINK_HP2_VIVA" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> Viva Prep</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Mic-I -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">🦠</span><div><span class="subject-name">Mic-I — Microbiology-I (Basic Bacteriology)</span><span class="subject-desc">Gram staining, culture media, sensitivity &amp; MIC testing</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_MIC1_MCQ" target="_blank" class="sublink sublink-mcq"><span class="sublink-icon">📝</span> MCQ Bank</a>
+              <a href="YOUR_LINK_MIC1_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <a href="YOUR_LINK_MIC1_PRACTICAL" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">🔬</span> Practical Book</a>
+              <a href="YOUR_LINK_MIC1_VIVA" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> Viva Prep</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Chemical Pathology-I -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">⚗️</span><div><span class="subject-name">Chemical Pathology-I</span><span class="subject-desc">Clinical chemistry, ISEs, Nernst equation, automated analyzers</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_CP1_MCQ" target="_blank" class="sublink sublink-mcq"><span class="sublink-icon">📝</span> MCQ Bank</a>
+              <a href="YOUR_LINK_CP1_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <a href="YOUR_LINK_CP1_PRACTICAL" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">🔬</span> Practical Book</a>
+              <a href="YOUR_LINK_CP1_VIVA" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> Viva Prep</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- BMB -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">🧪</span><div><span class="subject-name">BMB — Basic Molecular Biology</span><span class="subject-desc">DNA structure, PCR, gel electrophoresis, molecular techniques</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_BMB_MCQ" target="_blank" class="sublink sublink-mcq"><span class="sublink-icon">📝</span> MCQ Bank</a>
+              <a href="YOUR_LINK_BMB_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <span class="sublink sublink-soon"><span class="sublink-icon">🔬</span> Practical Book — Soon</span>
+              <a href="YOUR_LINK_BMB_VIVA" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> Viva Prep</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- Pakistan Studies -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">🇵🇰</span><div><span class="subject-name">PS — Pakistan Studies</span><span class="subject-desc">History, geography, constitution, national development</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_PS_MCQ" target="_blank" class="sublink sublink-mcq"><span class="sublink-icon">📝</span> MCQ Bank</a>
+              <a href="YOUR_LINK_PS_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <span class="sublink sublink-soon"><span class="sublink-icon">🔬</span> Practical Book — N/A</span>
+              <a href="YOUR_LINK_PS_VIVA" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> Important Topics</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- EPC-2 -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">📝</span><div><span class="subject-name">EPC-2 — English Proficiency 2</span><span class="subject-desc">Academic writing, reading comprehension, research writing</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <span class="sublink sublink-soon"><span class="sublink-icon">📝</span> MCQ Bank — Soon</span>
+              <a href="YOUR_LINK_EPC2_NOTES" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Revision Notes</a>
+              <a href="YOUR_LINK_EPC2_WRITING" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">✍️</span> Writing Practice</a>
+              <a href="YOUR_LINK_EPC2_READING" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">📚</span> Reading Comprehension</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- PERL-IV -->
+        <div class="subject-card">
+          <div class="subject-header" onclick="toggleSubject(this)">
+            <div class="subject-left"><span class="subject-icon">📓</span><div><span class="subject-name">PERL-IV — Reflective Learning</span><span class="subject-desc">Gibbs Reflective Cycle, advanced clinical placement journal</span></div></div>
+            <span class="subject-chevron">▼</span>
+          </div>
+          <div class="subject-links">
+            <div class="sublink-grid">
+              <a href="YOUR_LINK_PERL4_TEMPLATE" target="_blank" class="sublink sublink-notes"><span class="sublink-icon">📖</span> Gibbs Cycle Templates</a>
+              <a href="YOUR_LINK_PERL4_SAMPLES" target="_blank" class="sublink sublink-practical"><span class="sublink-icon">📄</span> Sample Journal Entries</a>
+              <a href="YOUR_LINK_PERL4_GUIDE" target="_blank" class="sublink sublink-viva"><span class="sublink-icon">🎯</span> How-to Guide</a>
+              <span class="sublink sublink-soon"><span class="sublink-icon">📝</span> MCQ Bank — Soon</span>
+            </div>
+          </div>
+        </div>
+ 
       </div>
     </div>
   </div>
